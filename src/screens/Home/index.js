@@ -31,7 +31,6 @@ const Home = ({navigation}) => {
     try {
       setRefreshing(true);
       // dispatch different action
-
       asyncWait(2000)
         .then(() => setRefreshing(false))
         .then(() => log('get refreshed'));
